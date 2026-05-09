@@ -70,6 +70,8 @@ class Solution {
             arr = new ArrayList<>();
         }
 
+        Thread t1 = new Thread( () -> System.gc());
+        t1.run();
         return grid;
     }
 }
