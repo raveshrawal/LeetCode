@@ -66,6 +66,8 @@ class Solution {
             for (int i = bottom - 1; i > top; i--) {
                 grid[i][left] = rotated.get(idx++);
             }
+            rotated = new ArrayList<>();
+            arr = new ArrayList<>();
         }
 
         return grid;
